@@ -1,0 +1,40 @@
+/* Стили для блока с преимуществами */
+.benefits {
+  background: rgb(31, 31, 31); /* Полупрозрачный фон */
+  padding: 60px;
+  text-align: center;
+}
+
+.benefits h3 {
+  font-size: 36px;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.benefits ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block; /* Чтобы список был по центру */
+  text-align: left; /* Выравниваем текст по левому краю внутри списка */
+}
+
+.benefits li {
+  font-size: 30px;
+  color: white;
+  margin-bottom: 10px;
+  padding-left: 50px; /* Отступ для галочки */
+  position: relative;
+}
+
+.benefits li::before {
+  content: "✔";
+  color: #BF7130; /* Оранжевый цвет для иконки */
+  position: absolute;
+  left: 0; /* Галочка прижата к левому краю текста */
+  font-size: 30px; /* Размер галочки */
+  top: 50%; /* Выравниваем по вертикали */
+  transform: translateY(-50%); /* Точное выравнивание по центру */
+}

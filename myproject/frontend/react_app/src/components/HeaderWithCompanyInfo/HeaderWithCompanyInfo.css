@@ -1,0 +1,145 @@
+/* Стили для header */
+.header {
+    padding: 20px 20px 10px; /* Уменьшили верхний отступ */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    z-index: 2; /* Над затемнением */
+  }
+  
+  .logo {
+    font-size: 48px; /* Крупный логотип */
+    font-weight: bold;
+    color: white; /* Белый цвет текста логотипа */
+    margin-bottom: 10px; /* Уменьшили отступ снизу */
+  }
+  
+  .nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-button {
+    background: none;
+    border: 2px solid white; /* Белая обводка */
+    color: white; /* Белый цвет текста */
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px; /* Скругленные углы */
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+  }
+  
+  .nav-button:hover {
+    background: rgba(255, 255, 255, 0.1); /* Легкий фон при наведении */
+    transform: translateY(-2px); /* Поднимаем кнопку */
+  }
+  
+  .nav-button:active {
+    transform: translateY(0); /* Возвращаем кнопку в исходное положение */
+  }
+  
+/* Стили для кнопки "Оставить заявку" */
+.apply-button {
+    background: #BF7130; /* Оранжевый фон */
+    border: none;
+    color: white;
+    padding: 20px 40px; /* Увеличили размер кнопки */
+    font-size: 20px; /* Увеличили размер текста */
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 30px; /* Отступ сверху */
+    position: relative;
+    z-index: 2; /* Над затемнением */
+  }
+  
+  .apply-button:hover {
+    background: #FFC840; /* Желтый фон при наведении */
+    transform: translateY(-2px); /* Поднимаем кнопку */
+  }
+  
+  .apply-button:active {
+    transform: translateY(0); /* Возвращаем кнопку в исходное положение */
+  }
+  
+  /* Стили для информации о компании */
+  .company_info {
+    background-image: url('./excavator-digging-day-light-outdoors.jpg'); /* Относительный путь */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh; /* На всю высоту экрана */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Поднимаем контент выше */
+    text-align: center;
+    position: relative;
+    padding-top: 40px; /* Отступ сверху */
+  }
+  
+  .company_info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Затемнение фона */
+    z-index: 1;
+  }
+  
+  .content {
+    background: rgba(50, 50, 50, 0.8); /* Полупрозрачный серый фон */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+    min-width: 500px;
+    width: 70%;
+    margin-top: 20px; /* Отступ сверху */
+  }
+  
+  .content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .content .description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .content .social_links h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: white;
+  }
+  
+  .content .social_links .icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .content .social_links .icons a {
+    transition: transform 0.3s ease;
+  }
+  
+  .content .social_links .icons a:hover {
+    transform: translateY(-5px);
+  }
+  
+  .content .social_links .icons img {
+    width: 40px;
+    height: 40px;
+  }

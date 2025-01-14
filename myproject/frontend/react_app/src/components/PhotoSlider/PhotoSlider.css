@@ -1,0 +1,25 @@
+/* Стили для слайдера */
+.photo-slider {
+    max-width: 800px; /* Максимальная ширина слайдера */
+    margin: 0 auto; /* Центрирование слайдера */
+    padding: 20px;
+  }
+  
+  .slider-image {
+    width: 100%; /* Ширина изображения */
+    height: auto; /* Высота автоматически */
+    border-radius: 12px; /* Скругленные углы */
+  }
+  
+  /* Стили для точек-индикаторов */
+  .slick-dots {
+    bottom: 10px; /* Позиция точек */
+  }
+  
+  .slick-dots li button:before {
+    color: white; /* Цвет точек */
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #BF7130; /* Цвет активной точки */
+  }
