@@ -17,7 +17,7 @@ export default function HeaderWithCompanyInfo() {
     <div className="company_info">
       {/* Header */}
       <header className="header">
-        <div className="logo">НАЗВАНИЕ КОМПАНИИ</div>
+        <div className="logo">ООО «СтройСиб С»</div>
         <nav className="nav">
           <button className="nav-button">О нас</button>
           <button className="nav-button">Услуги</button>
@@ -29,7 +29,7 @@ export default function HeaderWithCompanyInfo() {
       <div className="content">
         <h2>О компании</h2>
         <p className="description">
-        Мы — "НАЗВАНИЕ КОМПАНИИ", компания с многолетним опытом в области подземных раскопок, прокладки труб и подземной проводки. Наша миссия — обеспечить надежность, безопасность и эффективность ваших инфраструктурных проектов.
+        Мы — ООО «СтройСиб С», компания с многолетним опытом в области подземных раскопок, прокладки труб и подземной проводки. Наша миссия — обеспечить надежность, безопасность и эффективность ваших инфраструктурных проектов.
         </p>
         <div className="social_links">
           <h3>Мы в социальных сетях</h3>
