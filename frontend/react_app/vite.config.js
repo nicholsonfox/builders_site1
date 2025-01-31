@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:8000',  // Адрес Django-сервера
+        target: '0.0.0.0',  // Адрес Django-сервера
         changeOrigin: true,
         secure: false,
       },

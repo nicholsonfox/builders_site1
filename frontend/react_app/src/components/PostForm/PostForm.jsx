@@ -16,14 +16,26 @@ export default function PostForm({ onClose }) {
     const formData = new FormData(e.target);
     formData.append('entities', entityType); // Добавляем тип лица в FormData
 
+    // Создаем новый FormData объект для хранения только непустых значений
+    const cleanFormData = new FormData();
+
+    for (let [key, value] of formData.entries()) {
+        if (value !== '') {
+            cleanFormData.append(key, value);
+        }
+    }
+
     try {
       const response = await fetch('http://localhost:8000/submit-form/', {
         method: 'POST',
-        body: formData, // Отправляем FormData
+        body: cleanFormData, // Отправляем FormData
+        headers: {
+          'Accept': 'application/json',
+        },
       });
 
       if (response.ok) {
-        alert('Форма успешно отправлена!');
+
         onClose(); // Закрываем форму после успешной отправки
       } else {
         const errorData = await response.json();

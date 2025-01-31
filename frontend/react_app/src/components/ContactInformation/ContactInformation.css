@@ -1,0 +1,33 @@
+.contact_information {
+    background-color: rgb(31, 31, 31);
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Добавляем перенос элементов на новую строку */
+    padding-top: 20px; /* Добавляем отступы для мобилок */
+    box-sizing: border-box; /* Учитываем padding в общей ширине */
+}
+
+/* Стили для мобильных устройств (ширина экрана до 768px) */
+@media (max-width: 768px) {
+    .contact_information {
+        flex-direction: column; /* Элементы располагаются вертикально */
+        align-items: center; /* Центрируем элементы по горизонтали */
+        padding-top: 10px; /* Уменьшаем отступы для мобилок */
+    }
+
+    .contact_information > * {
+        margin-bottom: 15px; /* Добавляем отступ между элементами */
+        max-width: 100%; /* Ограничиваем ширину элементов */
+        overflow: hidden; /* Скрываем содержимое, выходящее за пределы */
+        white-space: normal; /* Разрешаем перенос текста */
+    }
+
+    .contact_information > *:last-child {
+        margin-bottom: 0; /* Убираем отступ у последнего элемента */
+    }
+}

@@ -13,7 +13,6 @@ class SubmitFormView(View):
         email = request.POST.get('email')
         phone = request.POST.get('phone')
         inn = request.POST.get('inn', None)  # ИНН только для юр. лиц
-
         try:
             if entity_type == 'Natural':
                 # Сохраняем данные для физ. лица
@@ -22,6 +21,7 @@ class SubmitFormView(View):
                     email=email,
                     phone=phone
                 )
+                print(phone)
             elif entity_type == 'Legal':
                 # Сохраняем данные для юр. лица
                 LegalEntity.objects.create(
