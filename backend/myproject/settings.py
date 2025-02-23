@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 CORS_ALLOWED_ORIGINS = [
-    "http://217.171.146.144:5173",  # Адрес вашего фронтенда
+    "217.171.146.144:5173",  # Адрес вашего фронтенда
 ]
 ROOT_URLCONF = 'myproject.urls'
 
@@ -140,3 +140,8 @@ EMAIL_USE_TLS = False
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 DEFAULT_FROM_EMAIL = 'noreply@sibstroy-s.ru'  # Можете указать любой email
+
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
