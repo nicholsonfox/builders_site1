@@ -26,7 +26,7 @@ export default function PostFormWithoutBack() {
     }
 
     try {
-      const response = await fetch('http://217.171.146.144:8000/submit-form/', {
+      const response = await fetch('http://217.171.146.144:8000/submit-form', {
         method: 'POST',
         body: cleanFormData, // Отправляем FormData
         headers: {
