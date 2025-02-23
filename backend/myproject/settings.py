@@ -131,12 +131,12 @@ STATICFILES_DIRS = [
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Используем консольный бэкенд для отправки писем
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 # Остальные настройки можно оставить пустыми, так как они не используются с консольным бэкендом
-EMAIL_HOST = ''
-EMAIL_PORT = ''
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = '25'
 EMAIL_USE_TLS = False
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
-DEFAULT_FROM_EMAIL = 'noreply@example.com'  # Можете указать любой email
+DEFAULT_FROM_EMAIL = 'noreply@sibstroy-s.ru'  # Можете указать любой email
