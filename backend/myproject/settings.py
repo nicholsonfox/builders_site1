@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-joef7*pdoiyi^6t-5u7axphynkb-=sypk@b995^e$bq3=)rjmq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["217.171.146.144"]
 
 
 # Application definition
@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  # Адрес вашего фронтенда
+    "http://217.171.146.144:5173",  # Адрес вашего фронтенда
 ]
 ROOT_URLCONF = 'myproject.urls'
 
