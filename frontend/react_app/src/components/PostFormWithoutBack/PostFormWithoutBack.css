@@ -1,0 +1,105 @@
+.form-container {
+  background: linear-gradient(to right, #BF7130, #FFC840);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%; /* Форма занимает всю доступную ширину */
+  color: white;
+  box-sizing: border-box;
+  margin: 20px auto; /* Центрирование формы на странице */
+  position: static; /* Убедимся, что форма не позиционируется абсолютно */
+  height: 500px; /* Фиксированная высота */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-entity-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+
+}
+
+.form-entity-buttons button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.form-entity-buttons button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.form-entity-buttons button:active {
+  transform: translateY(0);
+}
+
+.form-entity-buttons button.form-active {
+  background: white;
+  color: #BF7130;
+}
+
+.form-section {
+  flex-grow: 1; /* Занимает всё доступное пространство */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Равномерное расстояние между полями */
+  justify-content: flex-start; /* Элементы начинаются сверху */
+}
+
+.form-section p {
+  margin: 0; /* Убираем отступы у параграфов */
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-section input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: rgb(31, 31, 31);
+  color: white;
+  box-sizing: border-box;
+}
+
+.form-section input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #BF7130;
+}
+
+.form-submit-button {
+  background: white;
+  color: #BF7130;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 25px; /* Кнопка прижимается к низу */
+}
+
+.form-submit-button:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+}
+
+.form-submit-button:active {
+  transform: translateY(0);
+}

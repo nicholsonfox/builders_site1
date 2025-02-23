@@ -1,33 +1,33 @@
 import React from 'react';
+import YandexMap from '../YandexMap/YandexMap';
+import './ContactsPage.css'; // Подключаем стили
 
 const ContactsPage = () => {
   return (
-    <div className="about-page">
-      <h1>О нас</h1>
-      <p className="about-description">
-        ООО «СтройСиб С» — это команда профессионалов, специализирующихся на подземных раскопках, прокладке труб и подземной проводке. Мы работаем на рынке уже более 15 лет, обеспечивая надежность и качество в каждом проекте.
-      </p>
-      <div className="about-details">
-        <h2>Наши преимущества</h2>
-        <ul className="advantages-list">
-          <li>Высококвалифицированные специалисты с многолетним опытом.</li>
-          <li>Использование современного оборудования и технологий.</li>
-          <li>Строгое соблюдение сроков и бюджетов.</li>
-          <li>Индивидуальный подход к каждому клиенту.</li>
-        </ul>
+    <div className="contact_information">
+      <div className='contact_information_text'>
+        <h2>Адрес офиса: г. Новосибирск, улица Немировича-Данченко, 156</h2>
+        <h2>Телефон: +7 (123) 456-78-90</h2>
+        <h2>email: verylongemailaddress@example.com</h2>
+        <h2>ИНН: 5401987601</h2>
+        <h2>КПП: 540101001</h2>
+        <h2>ОГРН: 1185476083231</h2>
       </div>
-      <div className="about-history">
-        <h2>Наша история</h2>
-        <p>
-          Компания была основана в 2008 году с целью предоставления качественных услуг в области строительства и инфраструктуры. За годы работы мы реализовали более 500 проектов, получив множество положительных отзывов от наших клиентов.
-        </p>
+      <YandexMap />
+      <div className="social_links">
+      <h3>Мы в социальных сетях</h3>
+      <div className="icons">
+        <a href="https://vk.com" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/512/145/145813.png" alt="ВКонтакте" />
+        </a>
+        <a href="https://telegram.org" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" />
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+        </a>
       </div>
-      <div className="about-team">
-        <h2>Наша команда</h2>
-        <p>
-          Наша команда состоит из опытных инженеров, строителей и проектировщиков, которые работают слаженно и эффективно. Мы гордимся каждым членом нашей команды и их вкладом в общее дело.
-        </p>
-      </div>
+    </div>
     </div>
   );
 };

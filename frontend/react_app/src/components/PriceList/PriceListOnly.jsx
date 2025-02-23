@@ -2,7 +2,7 @@ import React, { useState } from 'react'; // Добавлен импорт useSta
 import './PriceList.css';
 import PostFormWithoutBack from '../PostFormWithoutBack/PostFormWithoutBack';
 
-export default function PriceList() {
+export default function PriceListOnly() {
   const [isFormOpen, setIsFormOpen] = useState(false); // Состояние для открытия/закрытия формы
   
     const handleOpenForm = () => {
@@ -14,7 +14,6 @@ export default function PriceList() {
     };
 
     return (
-      <div className='background_image'>
           <div className ="price_list">
           <h2>Наши услуги</h2>
           <table>
@@ -64,9 +63,5 @@ export default function PriceList() {
             </tbody>
           </table>
         </div>
-        {/* Кнопка "Оставить заявку" */}
-        <p></p>
-        <PostFormWithoutBack onClose={handleCloseForm}></PostFormWithoutBack>
-      </div>
     );
   }

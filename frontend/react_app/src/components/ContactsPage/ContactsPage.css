@@ -1,0 +1,82 @@
+/* Основные стили */
+.contact_information {
+    background: rgba(50, 50, 50, 0.8); /* Полупрозрачный серый фон */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    color: white;
+    text-align: center;
+  }
+  
+  .contact_information h2 {
+    font-size: 18px; /* Уменьшенный размер текста */
+    margin-bottom: 3px; /* Уменьшенное расстояние между h2 */
+    margin-top: 3px; /* Уменьшенное расстояние между h2 */
+    color: white;
+  }
+  
+  .contact_information .social_links h3 {
+    font-size: 18px; /* Уменьшенный размер текста */
+    margin-bottom: 10px;
+    color: white;
+  }
+  
+  .contact_information .social_links .icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .contact_information .social_links .icons a {
+    transition: transform 0.3s ease;
+  }
+  
+  .contact_information .social_links .icons a:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contact_information .social_links .icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  /* Стили для карты */
+  .map-container {
+    width: 100%;
+    height: 300px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Адаптация под мобильные устройства */
+  @media (max-width: 768px) {
+    .contact_information {
+      padding: 15px;
+      width: 95%;
+    }
+  
+    .contact_information h2 {
+      font-size: 16px; /* Еще меньше для мобилок */
+      margin-bottom: 8px;
+    }
+  
+    .contact_information .social_links h3 {
+      font-size: 16px; /* Еще меньше для мобилок */
+      margin-bottom: 8px;
+    }
+  
+    .contact_information .social_links .icons img {
+      width: 25px;
+      height: 25px;
+    }
+  
+    .map-container {
+      height: 250px;
+    }
+  }

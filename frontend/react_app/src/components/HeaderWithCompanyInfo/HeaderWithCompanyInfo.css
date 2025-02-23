@@ -44,7 +44,7 @@
   
 /* Стили для кнопки "Оставить заявку" */
 .apply-button {
-    background: #BF7130; /* Оранжевый фон */
+    background: #DF9E38; /* Оранжевый фон */
     border: none;
     color: white;
     padding: 20px 40px; /* Увеличили размер кнопки */
@@ -54,6 +54,7 @@
     border-radius: 8px;
     transition: background 0.3s, transform 0.2s;
     margin-top: 30px; /* Отступ сверху */
+    margin-bottom: 30px; /* Отступ сверху */
     position: relative;
     z-index: 2; /* Над затемнением */
   }
