@@ -47,10 +47,10 @@ export default function HeaderWithCompanyInfo() {
                 <div className="social_links">
                   <h3>Мы в социальных сетях</h3>
                   <div className="icons">
-                      <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                      <a href="https://vk.com" target="_blank" rel="noopener noreferrer">
                           <img src="https://cdn-icons-png.flaticon.com/512/145/145813.png" alt="ВКонтакте" />
                       </a>
-                      <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                      <a href="https://t.me/username" target="_blank" rel="noopener noreferrer">
                           <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" />
                       </a>
                       <a href="https://www.avito.ru" target="_blank" rel="noopener noreferrer">

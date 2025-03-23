@@ -68,21 +68,23 @@
     transform: translateY(0); /* Возвращаем кнопку в исходное положение */
   }
   
-  /* Стили для информации о компании */
-  .company_info {
-    background-image: url('./excavator-digging-day-light-outdoors.jpg'); /* Относительный путь */
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    min-height: 100vh; /* На всю высоту экрана */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Поднимаем контент выше */
-    text-align: center;
-    position: relative;
-    padding-top: 40px; /* Отступ сверху */
-  }
+/* Стили для информации о компании */
+.company_info {
+  background-image: url('./excavator-digging-day-light-outdoors.jpg'); /* Относительный путь */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Фиксируем фон */
+  width: 100%;
+  min-height: 100vh; /* На всю высоту экрана */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Поднимаем контент выше */
+  text-align: center;
+  position: relative;
+  padding-top: 40px; /* Отступ сверху */
+  overflow: hidden; /* Обрезаем содержимое, если оно выходит за пределы */
+}
   
   .company_info::before {
     content: '';
